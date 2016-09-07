@@ -1,5 +1,5 @@
 
-[OpenCV Android Studio](/img/repo-image.png)
+[OpenCV Android Studio](img/repo-image.png)
 
 
 ##Setting up OpenCV on Android Studio

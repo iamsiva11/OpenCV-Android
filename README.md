@@ -17,3 +17,36 @@
 * Add the OpenCV module to your app by selecting the app module in the left column. Click on the green in the dependencies tab, and finally, select the OpenCV module.
 
 * You are now ready to use OpenCV in your Android project. 
+
+
+###Add this code to your main activity file
+
+```java
+private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
+        @Override
+        public void onManagerConnected(int status) {
+            switch (status) {
+                case LoaderCallbackInterface.SUCCESS:
+                {
+                    Log.i("opencv", "opencv success");
+                    Toast.makeText(MainActivity.this, "Opencv works",
+                            Toast.LENGTH_LONG).show();
+                } break;
+                default:
+                {
+                    super.onManagerConnected(status);
+                } break;
+            }
+        }
+    };
+
+```
+
+#####Call this inside the onCreate() method
+
+```java
+OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_8, this, mLoaderCallback);
+```
+
+
+

@@ -48,5 +48,24 @@ private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
 OpenCVLoader.initAsync(OpenCVLoader.OPENCV_VERSION_2_4_8, this, mLoaderCallback);
 ```
 
+###SCREENSHOTS
+
+Just to check if you have went through the same process as mine smoothly. I'm posting the flow of the screenshots below.
+
+add-opencv-module.png
+import-opencv-to-Studio.png
+opencv-log-success.png
+
+
+*Importing the downloaded opencv library to Android studio as Module 
+![Import module ](img/add-opencv-module.png)
+
+*Add opencv module library to the project
+![add library to studio ](img/import-opencv-to-Studio.png)
+
+
+*Success log, if OpenCv is perfectly set up. Cheers!
+![Android Studio log ](img/opencv-log-success.png)
+
 
 

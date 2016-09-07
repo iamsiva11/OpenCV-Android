@@ -1,3 +1,7 @@
+
+[OpenCV Android Studio](/img/repo-image.png)
+
+
 ##Setting up OpenCV on Android Studio
 
 * Download Android Studio from https://developer.android.com/sdk/,  if not done already
